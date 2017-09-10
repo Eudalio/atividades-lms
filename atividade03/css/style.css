@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{ 
+    background-image: url(../imagens/gradient_bg.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.principal{
+    width: 900px;
+    margin: 0px auto;
+}
+
+.header{
+    height: 80px;
+    margin: 10px 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px dotted black;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+    top: 30;
+}
+
+nav li{
+    float: left;
+}
+
+nav li:last-child{
+    float: right;
+}
+
+nav li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+nav li a:hover:not(.active){
+    background-color: #888;
+}
+
+nav li a:active{
+    background-color: #4caf50;
+}
+
+h1{
+    margin: 10px 0;
+    border-bottom: ridge lightblue;
+}
+
+h3{
+    margin: 10px 0;
+    border-bottom: groove lightgreen;
+}
+
+p{
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 0px;
+    color: gray;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    float: left;
+    padding: 10px 10px 10px 0;
+    margin: 5px 5px 5px 0;
+    border-right: 1px solid lightskyblue;
+    border-top: 1px solid lightskyblue;
+    border-bottom: 1px solid lightskyblue;
+}
+
+article li{
+    text-align: left;
+    margin: 5px 0;
+    
+}
+
+form label{
+    padding: 10px 0px 10px 10px;
+}
+
+form input{
+    margin-left: 10px;
+}
+
+.btn{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.rodape{
+    background-image: url(../imagens/gradient_bg.png);
+    background-repeat: repeat-x;
+    text-align: center;
+    height: 40pt;
+    margin-top: 10px;
+}
