@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html,body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.header{
+    background-color:#fff!important;
+    color: #000!important;
+    padding: 8px 16px!important;
+    /* height: 63px; */
+}
+.default_header{
+    float: left;
+    width: 49.999%;
+}
+.logo{
+    
+    margin: 4px 0 6px 0;
+}
+
+.w3schools-logo {
+    font-family: fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 37px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 3px;
+    color: #555555;
+    display: block;
+    position: relative;
+}
+
+.w3schools-logo .pontocom {
+    color: #4CAF50;
+}
+
+.slogan{
+    font-family: "Segoe UI",Arial,sans-serif;
+    margin-top: 16px!important;
+    text-align: right!important;
+    letter-spacing: 4px;
+}
+
+/* Fim do Cabeçalho */
+
+/* Inicio do Menu */
+.menu_bar{
+    position: relative;
+    z-index: 4;
+    font-size: 17px;
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 100%;
+    overflow: hidden;
+    letter-spacing: 4px;
+}
+
+.nav_btn_hor{
+    white-space: normal;
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu_bar_dir{
+    float: right !important;
+}
+
+.nav_btn_dir{
+    float: right !important;
+    white-space: normal;
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sub_menu{
+    display: inline-block;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0,0);
+
+}
+
+/* Fim do Menu */
+
+/* Inicio do Menu Lateral*/
+
+.menu_lateral{
+    
+    display: block !important;
+    width: 190px;
+    height: 100%;
+    position: absolute !important;
+    margin-bottom: -155px;
+    z-index: 3;
+    color: #000 !important;
+    background-color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.16, rgba(0, 0, 0, 0.12));
+    float: left;
+    
+}
+
+.conteudo_menu_lateral{
+    border-right: 1px solid darkgray;
+}
+
+.conteudo_menu_lateral a:hover{
+    background-color: #ccc;
+}
+
+.conteudo_sub_secao_menu{
+    padding: 0.01em 16px;
+}
+
+.cabecalho{
+    margin-top: 15px !important;
+}
+h4{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 20px;
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.item_menu_lateral{
+    font-size: 16px;
+    padding: 0 16px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none;
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;    
+}
