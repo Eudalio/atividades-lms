@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: gray;
+    height: 100px;
+    width: 100%;  
+}
+/* Código referente ao estilo do MENU HORIZONTAL */
+.nav_horizontal{
+    background-color: #ddd;
+    overflow: auto;
+}
+
+.nav_horizontal > ul{
+    list-style: none;
+}
+
+.nav_horizontal > ul > li > a, .dropdown .dropdown-button{
+    display: block;
+    text-decoration: none;
+    color: black;
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.dropdown{
+    float: left;
+}
+
+.dropdown-content{
+    position: absolute;
+    background-color: #ddd;
+    width: 150px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown .dropdown-button{
+    float: none;
+}
+
+.nav_horizontal > ul > li > a:hover, .dropdown .dropdown-button:hover{
+    background-color: #ccc;
+}
+
+.dropdown-content > ul{
+    list-style: none;
+}
+
+.dropdown-content > ul > li > a{
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.dropdown-content > ul > li > a:hover{
+    background-color: #ccc;
+    color:#fff;
+}
+
+
+/*
+ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 1;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: #333;
+}
+
+.active{
+    background-color: #4caf96;
+}*/
