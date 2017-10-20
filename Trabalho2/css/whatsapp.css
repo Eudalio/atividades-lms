@@ -1,0 +1,28 @@
+*{margin: 0; padding: 0;}
+
+#principal{
+    width: 900px;
+    margin: 0px auto;
+    background-color: blue;
+}
+.header{
+    width: 100%;
+    background-color: #ccc;
+}
+
+.header h1{
+    padding: 10px;
+}
+
+.lista-amigos{
+    background-color: lightgreen;
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+.conversas{
+    float: left;
+    width: 70%;
+    background-color: lightcoral;
+}
