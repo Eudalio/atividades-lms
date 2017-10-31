@@ -3,26 +3,125 @@
 #principal{
     width: 900px;
     margin: 0px auto;
-    background-color: blue;
 }
+
 .header{
+    height: 60px;
+    /* display: inline-block; */
     width: 100%;
     background-color: #ccc;
 }
 
 .header h1{
-    padding: 10px;
+    padding: 11px 11px 11px 20px;
+    float: left;
+    cursor: pointer;
 }
 
-.lista-amigos{
-    background-color: lightgreen;
-    width: 30%;
+.header a{
+    padding: 10px 15px;
+    margin: 11px 29px 11px 11px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+}
+
+.header a:hover{
+    color: black;
+    background-color: #fff;
+}    
+
+#principal .col-left{
+    width: 25%;
     float: left;
     height: 100%;
+    background-color: #F7F9FA;
 }
 
-.conversas{
+#principal .col-right{
     float: left;
-    width: 70%;
-    background-color: lightcoral;
+    width: 75%;
+    height: 100%;
+    background-color: #F7F9FA;
+}
+
+.head-msg{
+    background-color: #EEE;
+    height: 50px;
+}
+
+.icon-user{
+    background: white url("../img/icone1.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.name-user{
+    float: left;
+    display: block;
+    padding: 15px 15px 15px 0;
+    margin-left: 10px;
+}
+
+.contact{
+    background-color: #EEE;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contact:hover{
+    background-color: #DDD;
+}
+
+.col-left .list-chat{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#principal .col-right .conversations{
+    width: calc(100%-1px);
+    height: 100%;
+    border-left: 1px solid #ccc;
+}
+
+#principal .col-right .conversations.active{
+    display: block;
+}
+
+.col-right .posts{
+    width: 100%;
+    background-color: #E5DDD5;
+    overflow-y: auto;
+}
+
+.col-right .posts .post-receive{
+    width: 50%;
+    float: left;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: whitesmoke;
+    text-align: left;
+    display: block;
+    border: 1px solid #DBDBD4;
+    border-radius: 10px;
+}
+
+.col-right .posts .post-send{
+    width: 50%;
+    float: right;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color:#DCF8C6;
+    text-align: left;
+    display: block;
+    border: 1px solid #DBDBD4;
+    border-radius: 10px;
 }
