@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Instant Messages</title>
 </head>
 <link rel="stylesheet" href="css/whatsapp.css">
+
 <body>
 
     <div id="principal">
@@ -15,32 +17,42 @@
             <a href="" class="botao-entrar">Login</a>
         </div>
         <div class="col-left">
-            <header class="head-msg" style="border-bottom:1px solid #ccc;">
-                <span class="icon-user"></span>
-                <span class="name-user">Groups</span>
-            </header>
-            <div class="list-chat">
-                <!-- Por enquanto isso é gerada dinamicamente (hard-coded)
-                <div class="contact"></div>
-                    <span class="icon-user"></span>
-                    <span class="name-user">User</span>
-                </div> -->
-            </div>
+             <div class="grupos">
+                <div class="head-msg" style="border-bottom:1px solid #ccc;">
+                    <span class="icon-group"></span>
+                    <span class="name-group">Eudálio Sousa</span>
+                </div>
+                <div class="list-grupos">
+                    <!-- Por enquanto isso é gerada dinamicamente (hard-coded)
+                    <div class="contact">
+                        <span class="icon-group"></span>
+                        <span class="name-group">User</span>
+                    </div>
+                    <div class="contact">
+                        <span class="icon-group"></span>
+                        <span class="name-group">User</span>
+                    </div>-->
+                </div>
+            </div> 
         </div>
         <div class="col-right">
-          <!--             
-            <div class="conversations">
-                <header class="head-msg">
-                    <span class="icon-user"></span>
-                    <span class="name-user">User</span>
-                </header>
-                <div class="posts">
-                    <span class="post-receive">tes</span>
-                    <span class="post-send">tes</span>
+             <div class="panel">
+                <div class="chat-head-msg">
+                    <span id="chat-icon-group" class="chat-icon-group"></span>
+                    <span id="chat-name-group" class="chat-name-group">Whatsapp WEB</span>
                 </div>
-            </div>-->
+                <div id="conversations" class="conversations">
+            <!--        <div class="posts">
+                        <p>tes</p>
+                        <p>tes</p>
+                        <!-- <span class="post-receive">tes</span>
+                        <span class="post-send">tes</span> 
+                    </div>-->
+                </div>
+            </div> 
         </div>
     </div>
     <script src="js/whatsapp.js"></script>
 </body>
+
 </html>

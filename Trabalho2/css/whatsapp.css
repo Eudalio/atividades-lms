@@ -36,22 +36,35 @@
     width: 25%;
     float: left;
     height: 100%;
-    background-color: #F7F9FA;
+}
+
+#principal .col-left .grupos{
+    height: 90%;
+    border: 1px solid #ccc;
 }
 
 #principal .col-right{
     float: left;
     width: 75%;
     height: 100%;
-    background-color: #F7F9FA;
 }
 
 .head-msg{
-    background-color: #EEE;
+    background-color: rgb(107, 207, 123);
     height: 50px;
 }
 
-.icon-user{
+.chat-head-msg{
+    background-color: #EEE;
+    height: 50px;
+    /* display: none; */
+}
+
+/* .chat-head-msg.active{
+    display: block;
+} */
+
+.icon-group{
     background: white url("../img/icone1.png");
     background-size: 30px 30px;
     background-repeat: no-repeat;
@@ -63,7 +76,26 @@
     border-radius: 50px;
 }
 
-.name-user{
+.chat-icon-group{
+    background: white url("../img/icone1.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    display: none;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.name-group{
+    float: left;
+    display: block;
+    padding: 15px 15px 15px 0;
+    margin-left: 10px;
+}
+
+.chat-name-group{
     float: left;
     display: block;
     padding: 15px 15px 15px 0;
@@ -71,38 +103,51 @@
 }
 
 .contact{
-    background-color: #EEE;
+    background-color: #eee;
     height: 50px;
     width: 100%;
     cursor: pointer;
+    border-bottom: 1px solid #ccc;
 }
 
 .contact:hover{
     background-color: #DDD;
 }
 
-.col-left .list-chat{
+.col-left .list-grupos{
     width: 100%;
     background-color: whitesmoke;
 }
 
 #principal .col-right .conversations{
-    width: calc(100%-1px);
+    margin: 5px;
+    padding: 5px;
+    overflow: auto;
+}
+
+#principal .col-right .panel{
+    width: calc( 100%);
     height: 100%;
-    border-left: 1px solid #ccc;
 }
 
-#principal .col-right .conversations.active{
+/* #principal .col-right .conversations.active{
     display: block;
+}     */
+
+.col-right .conversations .posts{
+    width: 50%;
+    /* background-color: #E5DDD5; */
+    /* overflow-y: auto; */
+    float: left;
+    background-color: #a8ddf7;
+    border-radius: 5px;
 }
 
-.col-right .posts{
-    width: 100%;
-    background-color: #E5DDD5;
-    overflow-y: auto;
-}
+.col-right .conversations .posts p{
+    padding: 5px;
+}    
 
-.col-right .posts .post-receive{
+/* .col-right .posts .post-receive{
     width: 50%;
     float: left;
     padding: 5px 10px;
@@ -124,4 +169,4 @@
     display: block;
     border: 1px solid #DBDBD4;
     border-radius: 10px;
-}
+} */
