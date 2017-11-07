@@ -35,7 +35,7 @@
 #principal .col-left{
     width: 25%;
     float: left;
-    height: 100%;
+    height: 100vh;
 }
 
 #principal .col-left .grupos{
@@ -46,7 +46,7 @@
 #principal .col-right{
     float: left;
     width: 75%;
-    height: 100%;
+    height: 100vh;
 }
 
 .head-msg{
@@ -120,14 +120,14 @@
 }
 
 #principal .col-right .conversations{
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
     overflow: auto;
 }
 
 #principal .col-right .panel{
-    width: calc( 100%);
+    width: 100%;
     height: 100%;
+    background-color: #E5DDD5;
 }
 
 /* #principal .col-right .conversations.active{
@@ -136,16 +136,22 @@
 
 .col-right .conversations .posts{
     width: 50%;
-    /* background-color: #E5DDD5; */
-    /* overflow-y: auto; */
+    background-color: whitesmoke;
+    overflow-y: auto; 
     float: left;
-    background-color: #a8ddf7;
     border-radius: 5px;
+    margin-bottom: 7px;
+    padding: 5px;
+    padding-right: none;
 }
 
 .col-right .conversations .posts p{
     padding: 5px;
 }    
+
+.bold{
+    font-weight: bold;
+}
 
 /* .col-right .posts .post-receive{
     width: 50%;

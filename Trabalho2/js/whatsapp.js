@@ -16,7 +16,7 @@ function addNameGroup(groupName, indice, id) {
     listGroups.appendChild(contact);
 
     contact.addEventListener('click', function(){ updateHeadChatGroup(indice)});
-    contact.addEventListener('click', loadPosts(id));
+    contact.addEventListener('click', function(){loadPosts(id)});
 }
 
 function loadGroups() {
@@ -55,14 +55,22 @@ function loadPosts(id){
     xhttp.onreadystatechange = function(){
         if (this.readyState == 4 && this.status == 200) {
             let obj_converted = JSON.parse(xhttp.responseText);
-            console.dir(obj_converted);
+            // console.dir(obj_converted);
             for(let i = 0; i < obj_converted.length; i++){
-                let post = document.createElement('div').classList.add("posts");
-                let paragrafoUser = document.createElement('p').appendChild(document.createTextNode(obj_converted[i].mensagens[i].userName)); 
+                let post = document.createElement('div');
+                post.classList.add("posts");
+                let paragrafoUser = document.createElement('p').appendChild(document.createTextNode(obj_converted[i].userName)); 
+                let paragrafoMessage = document.createElement('p').appendChild(document.createTextNode(obj_converted[i].message));
+                let br = document.createElement("br");
+                post.appendChild(paragrafoUser);
+                post.appendChild(br);
+                post.appendChild(paragrafoMessage);
+
+                conversation.appendChild(post);
             }
         }            
     };
-    let address = 'http://rest.learncode.academy/api/teste4/' + id;
+    let address = 'http://rest.learncode.academy/api/teste5/' + id;
     xhttp.open('GET', address, true);
     xhttp.send();
 }
