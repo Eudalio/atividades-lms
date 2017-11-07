@@ -33,7 +33,7 @@ function loadGroups() {
             }
         }
     };
-    xhttp.open('GET', 'http://rest.learncode.academy/api/teste3/groups', 'true');
+    xhttp.open('GET', 'http://rest.learncode.academy/api/eudalio/groups', 'true');
     xhttp.send();
     // return list;
 }
@@ -71,7 +71,7 @@ function loadPosts(id){
             }
         }            
     };
-    let address = 'http://rest.learncode.academy/api/teste5/' + id;
+    let address = 'http://rest.learncode.academy/api/eudalio/' + id;
     xhttp.open('GET', address, true);
     xhttp.send();
 }
