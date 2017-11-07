@@ -1,3 +1,4 @@
+alert("Prof perdoe essa 1h de atraso nesse trabalho, foi devido aos EU");
 function addNameGroup(groupName, indice, id) {
     let listGroups = document.querySelector(".list-grupos");
     let contact = document.createElement("div");
