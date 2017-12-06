@@ -1,0 +1,118 @@
+.gallery-item {
+    background-color: lightblue;
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.body-gallery-item {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.body-gallery-item span {
+    display: block;
+    font-size: 14px;
+    color: rgb(105, 104, 104);
+}
+
+.body-gallery-item h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.result{
+    display: none;
+    padding: 10px;
+}
+
+.result.erro{
+    color: red;
+}
+
+.result.sucess{
+    color: green;
+}
+
+.erro{
+    color: red;
+}
+.sucess{
+    color: green;
+}
+#cesta{
+    background: rgba(88, 80, 80, 0.667)
+}
+#cesta > span{
+    font-size: 17px;
+    color: rgb(15, 10, 10);
+}
+
+.carrinho ul{
+    width: 350px;
+}
+.carrinho .infos{
+    height: 60px;
+    background-color: whitesmoke;
+    margin-top: 5px;
+}
+.carrinho .icone{
+    width: 50px;
+}
+
+.carrinho .icone img{
+    float: left;
+    width: 100%;
+    margin: 5px;
+}    
+.carrinho .desc{
+    margin: 8px 5px;
+    float: left;
+    width: 190px;
+    height: 40px;
+}
+
+.carrinho .preco{
+    float: left;
+    width: 78px;
+    margin: 15px 5px;
+    height: 20px;
+}
+    
+.carrinho .finalizar-pedido{
+    clear: both;
+    padding: 10px;
+    background-color: rgb(228, 222, 222);
+    text-align: right;
+}
+
+.carrinho .finalizar-pedido span{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.send{
+    height: 40px;
+}
+
+.send .btn-buy{
+    float: left;
+    width: 70%;
+}
+
+.send input{
+    float: right;
+    text-align: center;
+    width: 25%;
+    height: 34px;
+}
+
+.dropdown-menu .aviso-carrinho{
+    padding-top: 0px;
+}

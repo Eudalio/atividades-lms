@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/galeria.css">
+    <title>Galeria de Produtos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">NTT</a>
+            </div>
+            <ul class="navbar-nav nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Categorias
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Raquetes</a>
+                        </li>
+                        <li>
+                            <a href="#">Mesas</a>
+                        </li>
+                        <li>
+                            <a href="#">Acessórios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Empresa</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown esconder">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    <ul class="dropdown-menu" style="margin-top:3px">
+                        <form id="form-cadastro" data-toggle="validator">
+                            <div id="group1" class="form-group has-error" style="padding:10px 10px 0 10px; width:350px;">
+                                <label for="name-user">Insert username:</label>
+                                <input type="text" class="form-control" id="name-user" placeholder="Username" required>
+                            </div>
+                            <div id="group2" class="form-group has-error" style="padding:0 10px 0 10px;">
+                                <label for="pwd">Insert password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Password" required maxlength="12">
+                            </div>
+                            <button type="submit" style="padding:6px; margin:0 0 5px 10px;" class="btn-register btn btn-primary">Cadastrar</button>
+                            <span class="result">Cadastrado com sucesso!!</span>
+                        </form>
+                    </ul>
+                </li>
+                <li class="dropdown esconder">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    <ul class="dropdown-menu" style="margin-top:3px">
+                        <form id="form-login" data-toggle="validator">
+                            <div id="group3" class="form-group has-error" style="padding:10px 10px 0 10px; width: 350px;">
+                                <label for="name-user-login">Username:</label>
+                                <input type="text" class="form-control" id="name-user-login" placeholder="Username" required>
+                            </div>
+                            <div id="group4" class="form-group has-error" style="padding:0 10px 0 10px;">
+                                <label for="pwd2">Password:</label>
+                                <input type="password" class="form-control" id="pwd2" placeholder="Password" required maxlength="12">
+                            </div>
+                            <button type="submit" style="padding:5px 15px; margin:0 0 5px 10px;" id="btn-login-changed" class="btn-login btn btn-primary">Login</button>
+                        </form>
+                    </ul>
+                </li>
+                <li class="sair">
+                    <a href=""><span class="glyphicon glyphicon-log-out"></span> Sair</a>
+                </li>
+                <li class=" dropdown carrinho">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    </a>
+                    <ul id="cesta" class="dropdown-menu" style="margin-top:3px">
+                        <span class="aviso-carrinho" style="margin:10px">Sua cesta está vazia!</span>
+                        <!-- <div class="infos">
+                            <div class="icone">
+                                <img src="img/raquete.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <span>Raquete DHS</span>
+                                <br>
+                                <span>Quantidade: 1</span>
+                            </div>
+                            <div class="preco">
+                                <span>R$ 210,00</span>
+                            </div>
+                        </div>
+                        <div class="finalizar-pedido">
+                            <span class="soma-total">Total: R$ 210,00</span>
+                            <button type="submit" class="btn-finalizar-compras btn btn-success">Finalizar Carrinho</button>
+                        </div> -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-sm-3">
+                <figure class="gallery-item">
+                    <img src="" alt="">
+                </figure>
+                <div class="body-gallery-item">
+                    <span>Descrição aqui</span>
+                    <h4>R$ 1.000</h4>
+                    <div class="send">
+                        <button type="button" class="btn btn-success btn-buy">Comprar</button>
+                        <input type="number" min="1" max="10" step="1" value="1">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/validator.min.js"></script>
+
+    <!-- jQuery library -->
+    <!-- <script src="js/gallery.js"></script> -->
+    <script src="js/g.js"></script>
+
+</body>
+
+</html>
